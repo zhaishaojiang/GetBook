@@ -10,7 +10,7 @@ HTML 代码
 
 JavaScript 代码
 
-```
+```js
 <script type="text/javascript">
   // 这里使用了jQuery插件
   $("#myform").bind('search', function () {
