@@ -24,7 +24,7 @@ render(
 )
 ```
 
-### `browserHistory(没有成功)` {#browserhistory}
+### `browserHistory` {#browserhistory}
 
 Browser history 是使用 React Router 的应用推荐的 history。它使用浏览器中的[History](https://developer.mozilla.org/en-US/docs/Web/API/History)API 用于处理 URL，创建一个像`example.com/some/path`这样真实的 URL 。
 
