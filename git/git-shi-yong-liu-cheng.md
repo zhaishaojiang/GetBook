@@ -46,7 +46,7 @@ git status 显示你上次提交更新后的更改或者写入缓存的改动，
 
 处理一些无需添加到 git 管理中的文件。\(如一些日志文件，或者编译过程中创建的临时文件等\)。
 
-`.gitignore ` 文件的格式规范如下：
+`.gitignore` 文件的格式规范如下：
 
 * 所有空行或者\( `#` \)开头的行都会被 git 忽略。
 * 可以使用标准的 `glob` 模式匹配。
@@ -58,7 +58,32 @@ git status 显示你上次提交更新后的更改或者写入缓存的改动，
 
 ### git commit
 
-使用 git add 命令将想要快照的
+使用 git add 命令将想要快照的内容写入缓存区，而执行 `git commit` 将缓存区内容添加到仓库中。
+
+git 为你的每一个提交记录都记录你的名字和邮箱地址，配置用户名和邮箱地址方法如下：
+
+```
+git config --global user.name 'username'
+git config --global user.email test@xxx.com
+```
+
+接下来提交所有改动，使用 `git commit -m '改动说明日志'` 
+
+### git remote
+
+添加一个新的远程 git 仓库：`git remote add <shortname> <url>` 
+
+查看远程仓库列表：`git remote` 
+
+查看远程仓库地址：`git remote -v`
+
+### git pull
+
+`git pull origin master` 拉去远程仓库数据\( origin 为远程仓库的缩略名，master 为该仓库的指定分支\)
+
+### git push
+
+`git push origin master` 把本地仓库中所有添加和修改的内容添加到远程仓库\( origin 为远程仓库缩略名，master 为该仓库指定分支\)
 
 
 
